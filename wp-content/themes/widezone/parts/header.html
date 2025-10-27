@@ -1,0 +1,67 @@
+<!-- wp:group {"tagName":"header","style":{"position":{"type":"sticky","top":"0px"},"spacing":{"padding":{"top":"var(--wp--custom--spacing--sm)","bottom":"var(--wp--custom--spacing--sm)","left":"var(--wp--custom--spacing--md)","right":"var(--wp--custom--spacing--md)"}},"border":{"bottom":{"color":"var(--wp--preset--color--deepblue)","width":"1px"}}},"backgroundColor":"warmsand","textColor":"deepblue","layout":{"type":"constrained"}} -->
+<header class="wp-block-group widezone-header" aria-label="Site header">
+<!-- wp:html -->
+<a class="skip-to-content" href="#primary-content">Skip to main content</a>
+<!-- /wp:html -->
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap","orientation":"horizontal"}} -->
+<div class="wp-block-group">
+<!-- wp:group {"layout":{"type":"flex","orientation":"horizontal","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"center"}} -->
+<div class="wp-block-group widezone-header__branding">
+<!-- wp:site-title {"level":2,"style":{"typography":{"fontSize":"1.4rem","fontWeight":"700"}}} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"widezone-header__nav-wrapper","layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"}} -->
+<div class="wp-block-group widezone-header__nav-wrapper">
+<!-- wp:html -->
+<div class="widezone-nav-toggle">
+<input type="checkbox" id="nav-toggle" class="widezone-nav-toggle__checkbox" aria-hidden="true" />
+<label for="nav-toggle" class="widezone-nav-toggle__button" aria-controls="primary-navigation" aria-expanded="false">
+<span class="widezone-nav-toggle__label">Menu</span>
+</label>
+<div class="widezone-nav-overlay" id="primary-navigation" role="navigation" aria-label="Primary Navigation">
+<label for="nav-toggle" class="widezone-nav-toggle__close" aria-label="Close navigation">×</label>
+<nav class="widezone-nav-overlay__inner">
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"center","flexWrap":"wrap"}} -->
+<!-- wp:navigation-link {"label":"Industries","url":"/industries/"} /-->
+<!-- wp:navigation-link {"label":"Investment Horizons","url":"/horizon/"} /-->
+<!-- wp:navigation-link {"label":"Portfolio","url":"/portfolio/"} /-->
+<!-- wp:navigation-link {"label":"Insights","url":"/insights/"} /-->
+<!-- wp:navigation-link {"label":"Careers","url":"/careers/"} /-->
+<!-- wp:navigation-link {"label":"Contact","url":"/contact/"} /-->
+<!-- /wp:navigation -->
+<div class="widezone-header__utility">
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons">
+<!-- wp:button {"style":{"spacing":{"padding":{"top":"0.35rem","bottom":"0.35rem","left":"1.2rem","right":"1.2rem"}},"border":{"radius":"var(--wp--custom--radius--xs)"}},"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/partner-with-us/">Partner With Us</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"backgroundColor":"electricteal","textColor":"deepblue","style":{"spacing":{"padding":{"top":"0.35rem","bottom":"0.35rem","left":"1.2rem","right":"1.2rem"}},"border":{"radius":"var(--wp--custom--radius--xs)"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-deepblue-color has-electricteal-background-color has-text-color has-background" href="/investor-portal/">Investor Portal</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+</nav>
+</div>
+</div>
+<script>
+(function(){
+const checkbox = document.getElementById('nav-toggle');
+const label = document.querySelector('label.widezone-nav-toggle__button');
+if (!checkbox || !label) {
+return;
+}
+const update = () => {
+label.setAttribute('aria-expanded', checkbox.checked ? 'true' : 'false');
+};
+checkbox.addEventListener('change', update);
+update();
+})();
+</script>
+<!-- /wp:html -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</header>
+<!-- /wp:group -->

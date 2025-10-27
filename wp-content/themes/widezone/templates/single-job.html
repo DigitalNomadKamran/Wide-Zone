@@ -1,0 +1,48 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"anchor":"primary-content","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--lg)","bottom":"var(--wp--custom--spacing--xl)"}}}} -->
+<main class="wp-block-group" id="primary-content">
+<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sm)","margin":{"bottom":"var(--wp--custom--spacing--md)"}}}} -->
+<div class="wp-block-group">
+<!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"clamp(2.4rem, 2rem + 1vw, 3.2rem)","fontWeight":"700"}}} /-->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"1rem"}}} -->
+<div class="wp-block-group job-meta">
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"0.35rem"}}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}}} -->
+<p style="font-weight:600">Department:</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"post_meta","key":"job_department"}}}} -->
+<p></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"0.35rem"}}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}}} -->
+<p style="font-weight:600">Location:</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"post_meta","key":"job_location"}}}} -->
+<p></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"0.35rem"}}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600"}}} -->
+<p style="font-weight:600">Type:</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"post_meta","key":"job_type"}}}} -->
+<p></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+<!-- wp:post-featured-image {"align":"wide","style":{"spacing":{"margin":{"top":"var(--wp--custom--spacing--sm)","bottom":"var(--wp--custom--spacing--sm)"}}}} /-->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"deepblue","backgroundColor":"electricteal","metadata":{"bindings":{"url":{"source":"post_meta","key":"job_apply_url"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-deepblue-color has-electricteal-background-color has-text-color has-background" href="#" target="_blank" rel="noopener">Apply Now</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+<!-- wp:post-content {"layout":{"type":"constrained","contentSize":"var(--wp--custom--container--narrow)"}} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
