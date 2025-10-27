@@ -1,0 +1,17 @@
+/*
+Theme Name: Wide Zone
+Theme URI: https://widezone.co/
+Author: Wide Zone Co.
+Author URI: https://widezone.co/
+Description: Minimalist visionary corporate block theme for Wide Zone Co.
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: widezone
+Tags: full-site-editing, block-patterns, block-styles, custom-colors
+*/
+
+/* Additional styles are handled via theme.json and /assets/css/util.css */

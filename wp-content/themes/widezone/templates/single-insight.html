@@ -1,0 +1,44 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"anchor":"primary-content","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--lg)","bottom":"var(--wp--custom--spacing--xl)"}}}} -->
+<main class="wp-block-group" id="primary-content">
+<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sm)","margin":{"bottom":"var(--wp--custom--spacing--md)"}}}} -->
+<div class="wp-block-group">
+<!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"clamp(2.6rem, 2.1rem + 1vw, 3.4rem)","fontWeight":"700"}}} /-->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"0.5rem"}}} -->
+<div class="wp-block-group">
+<!-- wp:post-date /-->
+<!-- wp:post-author {"showAvatar":false} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:post-featured-image {"align":"wide","style":{"spacing":{"margin":{"top":"var(--wp--custom--spacing--sm)","bottom":"var(--wp--custom--spacing--sm)"}}}} /-->
+<!-- wp:post-excerpt /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:post-content {"layout":{"type":"constrained","contentSize":"var(--wp--custom--container--narrow)"}} /-->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var(--wp--custom--spacing--lg)"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group">
+<!-- wp:post-navigation-link {"type":"previous","label":"Previous Insight"} /-->
+<!-- wp:post-navigation-link {"label":"Next Insight"} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:comments -->
+<div class="wp-block-comments">
+<!-- wp:comments-title /-->
+<!-- wp:comment-template -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--sm)","bottom":"var(--wp--custom--spacing--sm)"}},"border":{"bottom":{"color":"rgba(0,43,91,0.15)","width":"1px"}}}} -->
+<div class="wp-block-group">
+<!-- wp:comment-author-name /-->
+<!-- wp:comment-date /-->
+<!-- wp:comment-content /-->
+<!-- wp:comment-reply-link /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:comment-template -->
+<!-- wp:comment-form /-->
+</div>
+<!-- /wp:comments -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
