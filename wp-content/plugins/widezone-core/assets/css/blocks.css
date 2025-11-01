@@ -1,0 +1,140 @@
+.wp-block-widezone-projects-grid,
+.wp-block-widezone-industries-grid,
+.wp-block-widezone-values-list,
+.wp-block-widezone-contact-card,
+.wp-block-widezone-offices-list,
+.wp-block-widezone-filters-bar,
+.wz-jobs,
+.wz-offices,
+.wz-portal {
+    display: grid;
+    gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.wp-block-widezone-projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.project-card,
+.industry-card,
+.wz-job,
+.wz-office {
+    background: var(--wp--preset--color--surface, #ffffff);
+    border-radius: var(--wp--custom--radius--md, 0.75rem);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: clamp(1.25rem, 2vw, 1.75rem);
+    box-shadow: 0 18px 30px -24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.industry-card:hover,
+.wz-job:hover,
+.wz-office:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 40px -24px rgba(0, 43, 91, 0.45);
+}
+
+.project-card__media img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--wp--custom--radius--md, 0.75rem);
+    margin-bottom: 1rem;
+}
+
+.project-card__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    background: var(--wp--preset--color--accent, #00c2c7);
+    color: var(--wp--preset--color--surface, #ffffff);
+    border-radius: var(--wp--custom--radius--lg, 999px);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.widezone-block-placeholder {
+    padding: 1.5rem;
+    background: rgba(0, 194, 199, 0.08);
+    border: 1px dashed var(--wp--preset--color--accent, #00c2c7);
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.wz-filters {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--wp--preset--color--surface, #ffffff);
+    border-radius: var(--wp--custom--radius--md, 0.75rem);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.wz-filters__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.wz-filter__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid var(--wp--preset--color--primary, #002b5b);
+    color: var(--wp--preset--color--primary, #002b5b);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.wz-filter__link:hover,
+.wz-filter__link.is-active {
+    background: var(--wp--preset--color--primary, #002b5b);
+    color: var(--wp--preset--color--surface, #ffffff);
+}
+
+.wp-block-widezone-contact-card {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(0, 43, 91, 0.88), rgba(0, 194, 199, 0.82));
+    color: var(--wp--preset--color--surface, #ffffff);
+    border-radius: var(--wp--custom--radius--md, 0.75rem);
+}
+
+.wp-block-widezone-contact-card a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.wz-portal__item,
+.wz-jobs__empty,
+.wz-portal__notice {
+    background: var(--wp--preset--color--surface, #ffffff);
+    padding: 1.25rem;
+    border-radius: var(--wp--custom--radius--md, 0.75rem);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.wz-portal__title a,
+.wz-job__title a,
+.project-card__title a,
+.industry-card__title a {
+    color: var(--wp--preset--color--primary, #002b5b);
+    text-decoration: none;
+}
+
+.wz-portal__title a:hover,
+.wz-job__title a:hover,
+.project-card__title a:hover,
+.industry-card__title a:hover {
+    color: var(--wp--preset--color--accent, #00c2c7);
+}
+
+@media (max-width: 782px) {
+    .wp-block-widezone-projects-grid,
+    .wp-block-widezone-industries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    }
+}
